@@ -1,15 +1,22 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
        * {
           box-sizing: border-box;
           margin:0;
           padding: 0;
-          font-family: 'Kanit', sans-serif;
        }
 
        html {
          font-size:10px;
+
+         @media (max-width:600px) {
+          font-size: 8px;
+         }
+       }
+
+       body {
+        font-family: Inter var,helvetica,arial,sans-serif;
        }
 
        h2{
@@ -26,5 +33,8 @@ export const GlobalStyle = createGlobalStyle`
 
        a {
         text-decoration: none;
+        cursor: pointer;
        }
-`;
+
+       
+`
