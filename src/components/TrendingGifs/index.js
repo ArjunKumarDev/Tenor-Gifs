@@ -28,7 +28,7 @@ export default function TrendingGifs() {
 
             <StyledCarousel {...carouselsettings}>
                 {/* Load only 10 Trending gifs */}
-                {trendingList?.slice(0, 10)?.map((item, idx) => {
+                {trendingList?.map((item, idx) => {
                     return (
                         <InnerCard
                             key={idx}
